@@ -26,7 +26,9 @@ ${data["html"]}
 </body>
 
 <script type="text/javascript">
+window.onload = function() {
 ${data["js"]}
+};
 </scr` +
 // This has to be broken up because otherwise it is recognized as the main
 // document's end script tag
