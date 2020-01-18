@@ -19,16 +19,18 @@ function getHTML(data) {
 <style>
 ${data["css"]}
 </style>
+
+</head>
+<body>
+${data["html"]}
+</body>
+
 <script type="text/javascript">
 ${data["js"]}
 </scr` +
 // This has to be broken up because otherwise it is recognized as the main
 // document's end script tag
 `ipt>
-</head>
-<body>
-${data["html"]}
-</body>
 `;
 
   return pageData;
